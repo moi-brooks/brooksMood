@@ -1,5 +1,5 @@
-const CLIENT_ID = '2e30b90ce86045b78723428288ff7321';
-const CLIENT_SECRET = 'b30906f6841f44baaf346e0f2ae760a6';
+const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID;
+const CLIENT_SECRET = import.meta.env.VITE_SPOTIFY_CLIENT_SECRET;
 
 interface SpotifyToken {
   access_token: string;
